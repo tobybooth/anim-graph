@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Graph View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TOBGraphViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-Kf-yJm" customClass="TOBGraphView">
+                                <rect key="frame" x="0.0" y="25" width="178" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PqI-Kr-Faa">
+                                <rect key="frame" x="184" y="31" width="136" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="96"/>
+                                <color key="textColor" red="0.53953200120192313" green="0.19024065637940676" blue="0.19657687141475949" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DgF-Kf-yJm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="299-Ti-cgL"/>
+                            <constraint firstItem="PqI-Kr-Faa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="11" id="7NW-ep-Roe"/>
+                            <constraint firstItem="PqI-Kr-Faa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="184" id="AdV-Dd-LE3"/>
+                            <constraint firstItem="PqI-Kr-Faa" firstAttribute="bottom" secondItem="DgF-Kf-yJm" secondAttribute="bottom" constant="-6" id="DMs-hP-udE"/>
+                            <constraint firstAttribute="trailing" secondItem="DgF-Kf-yJm" secondAttribute="trailing" constant="142" id="How-GP-P8X"/>
+                            <constraint firstItem="DgF-Kf-yJm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="5" id="nPS-GC-0Hj"/>
+                            <constraint firstAttribute="trailing" secondItem="PqI-Kr-Faa" secondAttribute="trailing" id="z5P-T5-uzs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="DgF-Kf-yJm" id="VnD-bZ-2vM"/>
+                        <outlet property="hrLabel" destination="PqI-Kr-Faa" id="eB1-pK-xPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
